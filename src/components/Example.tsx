@@ -1,17 +1,7 @@
 import { FC, useMemo } from 'react';
 import { useAccount, useConnect, useDisconnect, useSignMessage } from 'wagmi';
 
-// import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet';
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect';
-
-// const alchemyApiKey = process.env.REACT_APP_ALCHEMY_API_KEY;
-
-// const connector = new CoinbaseWalletConnector({
-//   options: {
-//     appName: 'wagmi.sh',
-//     jsonRpcUrl: `https://eth-mainnet.alchemyapi.io/v2/${alchemyApiKey}`,
-//   },
-// });
 
 const connector = new WalletConnectConnector({
   options: {
